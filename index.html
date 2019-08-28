@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>float</title>
+  <style>
+    body {
+      font-family: helvetica;
+      line-height: 8vh;
+      font-size: 4vw;
+      color: white;
+      text-align: center;
+    }
+
+    .div1 {
+      background-color: black;
+      float: left;
+      width: 10vw;
+      height: 10vh;
+      transition-property: background-color, height;
+      transition-duration: 1s;
+      transition-timing-function: ease-in-out;
+    }
+
+    .div1.is-active {
+    background-color: #1ce;
+    height: 100vh;
+    line-height: 100vh;
+    }
+
+    .div2 {
+      background-color: black;
+      float: left;
+      width: 10vw;
+      height: 10vh;
+      transition-property: background-color, height;
+      transition-duration: 1s;
+      transition-timing-function: ease-in-out;
+    }
+
+    .div2.is-active {
+        background-color: rgb(56, 211, 238);
+    height: 100vh;
+    line-height: 100vh;
+    }
+
+    .div3 {
+        background-color: black;
+      float: left;
+      width: 10vw;
+      height: 10vh;
+      transition-property: background-color, height;
+      transition-duration: 1s;
+      transition-timing-function: ease-in-out;
+      
+    }
+
+    .div3.is-active {
+        background-color: rgb(113, 219, 238);
+    height: 100vh;
+    line-height: 100vh;
+    }
+
+    .div4 {
+        background-color: black;
+      float: left;
+      width: 10vw;
+      height: 10vh;
+      transition-property: background-color, height;
+      transition-duration: 1s;
+      transition-timing-function: ease-in-out;
+      
+    }
+
+    .div4.is-active {
+        background-color: rgb(160, 222, 233);
+    height: 100vh;
+    line-height: 100vh;
+    }
+
+    .div5 {
+        background-color: black;
+      float: left;
+      width: 9vw;
+      height: 10vh;
+      transition-property: background-color, height;
+      transition-duration: 1s;
+      transition-timing-function: ease-in-out;      
+    }
+
+    .div5.is-active {
+        background-color: rgb(248, 245, 91);
+    height: 100vh;
+    line-height: 100vh;
+    }
+
+
+    .div6 {
+        background-color: black;
+      float: left;
+      width: 9vw;
+      height: 10vh;
+      transition-property: background-color, height;
+      transition-duration: 1s;
+      transition-timing-function: ease-in-out;
+      
+    }
+
+    .div6.is-active {
+        background-color: rgb(248, 245, 56);
+    height: 100vh;
+    line-height: 100vh;
+    }
+
+    .div7 {
+        background-color: black;
+      float: left;
+      width: 9vw;
+      height: 10vh;
+      transition-property: background-color, height;
+      transition-duration: 1s;
+      transition-timing-function: ease-in-out;
+      
+    }
+
+    .div7.is-active {
+        background-color: rgb(255, 251, 40);
+    height: 100vh;
+    line-height: 100vh;
+    }
+
+    .div8 {
+        background-color: black;
+      float: left;
+      width: 9vw;
+      height: 10vh;
+      transition-property: background-color, height;
+      transition-duration: 1s;
+      transition-timing-function: ease-in-out;
+      
+    }
+
+    .div8.is-active {
+        background-color: rgb(234, 238, 17);
+    height: 100vh;
+    line-height: 100vh;
+    }
+
+    .div9 {
+        background-color: black;
+      float: left;
+      width: 9vw;
+      height: 10vh;
+      transition-property: background-color, height;
+      transition-duration: 1s;
+      transition-timing-function: ease-in-out;
+      
+    }
+
+    .div9.is-active {
+        background-color: rgb(255, 239, 11);
+    height: 100vh;
+    line-height: 100vh;
+    }
+
+    .div10 {
+      background-color: black;
+      float: left;
+      width: 9vw;
+      height: 10vh;
+      transition-property: background-color, height;
+      transition-duration: 1s;
+      transition-timing-function: ease-in-out;
+      
+    }
+
+    .div10.is-active {
+        background-color: rgb(255, 198, 11);
+    height: 100vh;
+    line-height: 100vh;
+    }
+
+
+
+  </style>
+</head>
+<body>
+
+      <div class="div1" id="div1">c</div>
+      <div class="div2" id="div2">l</div>
+      <div class="div3" id="div3">i</div>
+      <div class="div4" id="div4">c</div>
+      <div class="div5" id="div5">k</div>
+      <div class="div6" id="div6"></div>
+      <div class="div7" id="div7">h</div>
+      <div class="div8" id="div8">e</div>
+      <div class="div9" id="div9">r</div>
+      <div class="div10" id="div10">e</div>
+
+
+  <script>
+
+// Hover over the first div to start animation for all divs.
+    var div1 = document.getElementById("div1");
+    var div2 = document.getElementById("div2");
+    var div3 = document.getElementById("div3");
+    var div4 = document.getElementById("div4");
+    var div5 = document.getElementById("div5");
+    var div6 = document.getElementById("div6");
+    var div7 = document.getElementById("div7");
+    var div8 = document.getElementById("div8");
+    var div9 = document.getElementById("div9");
+    var div10 = document.getElementById("div10");
+
+    function changeBackground1() {
+    console.log("hellooo");
+    div1.classList.toggle("is-active");
+    setTimeout(changeBackground2, 50);
+    setTimeout(changeBackground3, 100);
+    setTimeout(changeBackground4, 150);
+    setTimeout(changeBackground5, 200);
+    setTimeout(changeBackground6, 250);
+    setTimeout(changeBackground7, 300);
+    setTimeout(changeBackground8, 350);
+    setTimeout(changeBackground9, 400);
+    setTimeout(changeBackground10, 450);
+
+    div1.innerHTML="h";
+    div2.innerHTML="e";
+    div3.innerHTML="y";
+    div4.innerHTML="";
+    div5.innerHTML="c";
+    div6.innerHTML="u";
+    div7.innerHTML="t";
+    div8.innerHTML="i";
+    div9.innerHTML="e";
+    div10.innerHTML=":)";
+    };
+
+    div1.addEventListener("click", changeBackground1);
+    div2.addEventListener("click", changeBackground1);
+    div3.addEventListener("click", changeBackground1);
+    div4.addEventListener("click", changeBackground1);
+    div5.addEventListener("click", changeBackground1);
+    div6.addEventListener("click", changeBackground1);
+    div7.addEventListener("click", changeBackground1);
+    div8.addEventListener("click", changeBackground1);
+    div9.addEventListener("click", changeBackground1);
+    div10.addEventListener("click", changeBackground1);
+
+    function changeBackground2() {
+    div2.classList.toggle("is-active");
+    };
+
+    function changeBackground3() {
+    div3.classList.toggle("is-active");
+    };
+
+    function changeBackground4() {
+    div4.classList.toggle("is-active");
+    };
+
+    function changeBackground5() {
+    div5.classList.toggle("is-active");
+    };
+
+    function changeBackground6() {
+    div6.classList.toggle("is-active");
+    };
+
+    function changeBackground7() {
+    div7.classList.toggle("is-active");
+    };
+
+    function changeBackground8() {
+    div8.classList.toggle("is-active");
+    };
+
+    function changeBackground9() {
+    div9.classList.toggle("is-active");
+    };
+
+    function changeBackground10() {
+    div10.classList.toggle("is-active");
+    };
+
+
+  </script>
+
+
+
+</body>
+</html>
